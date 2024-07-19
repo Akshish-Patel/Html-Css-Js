@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.main{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.slide_bar{
+    width: 22rem;
+    /* padding: 0.5rem; */
+    padding-right:0.1rem;
+    padding-left: 0.65rem;
+}
+
+.main_containt{
+    margin:0rem 0.5rem;
+    padding-right: 0.15rem; 
+    flex: 1;
+}
+
+.player{
+    height: 4.5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+}
+
+.logo{
+    height: 9.75rem;
+    width: 100%;
+    margin: 0.5rem  0rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #121212;
+}
+
+.library{
+    height: 27.5rem;
+    width: 100%;
+    /* margin: 0.5r em 0rem; */
+    border-radius: 1rem;
+    background-color: #121212;
+}
+
+.containe{
+    height: 37.75rem;
+    width: 100%;
+    margin: 0.5rem  0rem;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+}
+
+.spotify{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 2.75rem;
+    /* padding: 0.5rem 1rem; */
+}
+.logo img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.home, .search{
+    line-height: 2.5rem;
+    justify-content: left;
+    align-items: center;
+}
+
+.home i ,.search i{
+    font-size: 1.35rem;
+    margin-right: 1.4rem;
+}
+
+.search {
+    opacity: 0.5;
+}
+
+.search:hover{
+    opacity: 1;
+}
+
+.library{
+    padding: 0.5rem 0.5rem;    
+    line-height: 3.5rem;
+}
+
+.libraary_logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+.library span{
+    line-height: 3rem;
+    font-size: 1.1rem;
+}
+.libraary_logo img{
+    height: 1.55rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+.libraary_logo i{
+    margin-left: 9.5rem;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.libraary_logo:hover{
+    opacity: 1;
+}
+
+.libraary_logo i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.playlist_card{
+    width: 100%;
+    height: 8.35rem;
+    background-color: #242424;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* padding: 1rem */
+}
+
+.playtist_title{
+    line-height: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem; 
+    font-size: 1rem;
+}
+
+.playlist_info{
+    line-height: 1rem;
+    padding: 0.5rem 1rem;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+.playlist_card button{
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #121212;
+    opacity: 0.95;
+    
+}
+
+.navbar .left img{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.5;
+    /* margin-left: 0.1rem; */
+}
+
+.navbar .left{
+    margin: 1.1rem;
+}
+
+.navbar .right{
+    margin-left: 43.5rem;
+}
+
+.navbar .premium{
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    margin-left: 1rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.navbar .install{
+    border: none;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 0.3rem 0.5rem;
+    margin-left: 1rem;
+}
+
+.navbar .icon{
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 1rem;
+    opacity: 0.5;
+}
+
+.navbar .left img{
+    opacity: 1;
+}
+
+.icon:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.navbar .install:hover, .navbar .premium:hover{
+    transform: scale(1.1);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;   
+    /* justify-content: space-around;  */
+}
+
+
+.card{
+    margin: 1rem;
+    width: 12rem;
+    height: 17rem;
+    padding: 1rem;
+    background-color: #1e1b1b;
+    border-radius: 1rem;
+       margin: 0.5rem 1rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card_info{
+    font-size: 0.8rem;
+    /* margin-bottom: 1rem; */
+}
+
+.row h3{
+    margin: 0.5rem 1.3rem;
+    font-size: 1.5rem;
+}
+
+.row{
+    padding-bottom: 2rem;
+}
+
+.card:hover{
+    background-color: #3e3939;
+}
+
+::-webkit-scrollbar{
+    width: 0.9rem;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+
+    height: 0;
+}
+
+.player{
+    display: flex;
+    /* padding: 1rem; */
+}
+.player .song{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.player .play{
+    width: 50%;
+    height: 100%;
+}
+
+.player .icons{
+    width: 25%;
+    height: 100%;
+}
+
+.player .song img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
+
+.song_title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.song_info{
+    font-size: 12px;
+    opacity: 0.5;
+    line-height: 12px;
+}
+
+.song_info:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.player i{
+    margin-left: 2rem;
+    opacity: 0.5;
+}
+
+.player i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.up{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    /* margin-bottom: 0.5rem; */
+}
+.play_icon1{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.5;
+    /* margin: 0 3rem; */
+}
+
+.play_icon2{
+    height: 12px;
+    width: 12px;
+    margin: 0 2rem;
+    opacity: 0.5;
+}
+
+.play_icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+.play_icon1:hover, .play_icon2:hover{
+    opacity: 1;
+}
+
+.play_icon:hover{
+    transform: scale(1.1);
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 0.5rem  0;
+}
+
+.progress_bar{
+    width: 75%;
+    margin: 0 1rem;
+    appearance: none;
+    background-color: transparent;
+}
+
+.progress_bar::-webkit-slider-runnable-track{
+    background-color: gray;
+    border-radius: 1rem;
+    height: 0.25rem;
+}
+
+.progress_bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    margin-top: -0.3rem;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: right;
+}
+.icons img{
+    height: 1.5rem;
+    width: 1.5rem;
+    /* margin-right: 1rem; */
+    opacity: 0.5;
+}
+
+.icons img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sound_bar{
+    width: 6rem;
+    appearance: none;
+    background-color: transparent;
+}
+
+.sound_bar::-webkit-slider-runnable-track{
+    background-color: gray;
+    border-radius: 1rem;
+    height: 0.25rem;
+}
+
+.sound_bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    margin-top: -0.3rem;
+}
